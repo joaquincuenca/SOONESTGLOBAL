@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-
+import { Link } from 'react-router';
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -28,10 +28,11 @@ export default function Navbar() {
                         isOpen ? 'flex' : 'hidden'
                     }`}
                 >
-                    <li><a href="#home" className="block px-6 py-2 hover:text-blue-500">Home</a></li>
-                    <li><a href="#services" className="block px-6 py-2 hover:text-blue-500">Services</a></li>
-                    <li><a href="#about" className="block px-6 py-2 hover:text-blue-500">About</a></li>
-                    <li><a href="#contact" className="block px-6 py-2 hover:text-blue-500">Contact us</a></li>
+                    <li><Link to="/" className="block px-6 py-2 hover:text-blue-500">Home</Link></li>
+                    <li><Link to="/services" className="block px-6 py-2 hover:text-blue-500">Services</Link></li>
+                    <li><Link to="/about" className="block px-6 py-2 hover:text-blue-500">About</Link></li>
+                    <li><Link to="/testimonials" className="block px-6 py-2 hover:text-blue-500">Testimonials</Link></li>
+                    <li><Link to="/contact" className="block px-6 py-2 hover:text-blue-500">Contact us</Link></li>
                 </ul>
             </div>
         </nav>

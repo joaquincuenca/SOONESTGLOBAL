@@ -15,9 +15,9 @@ export default function AppRouter() {
             {/* Landing Page */}
             <Route path="/" element={<MainLayout />}>
                 <Route index element={<Home />} />
-                <Route index element={<Services />} />
+                <Route path='/services' element={<Services />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/about" element={<Testimonials />} />
+                <Route path="/testimonials" element={<Testimonials />} />
                 <Route path="/contact" element={<Contact />} />
             </Route>
         </Routes>
