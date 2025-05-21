@@ -1,27 +1,11 @@
-import { useState } from 'react'
-import './App.css'
-
-import Navbar from './components/Navbar'
-import Home from './sections/Home'
-import About from './sections/About'
-import Services from './sections/Services'
-import Contact from './sections/Contact'
-import Testimonial from './sections/Testimonials'
-import Footer from './components/Footer'
-
+import React from 'react';
+import './App.css';
+import AppRouter from './routes/AppRouter';
 
 function App() {
   return (
-    <div className="font-sans">
-      <Navbar />
-      <Home />
-      <About />
-      <Services />
-      <Testimonial />
-      <Contact />
-      <Footer />
-    </div>
-  )
+      <AppRouter />
+  );
 }
 
-export default App
+export default App;

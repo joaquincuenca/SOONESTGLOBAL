@@ -30,11 +30,7 @@ export default function Navbar() {
                 >
                     <li><a href="#home" className="block px-6 py-2 hover:text-blue-500">Home</a></li>
                     <li><a href="#services" className="block px-6 py-2 hover:text-blue-500">Services</a></li>
-                    <li><a href="#accreditations" className="block px-6 py-2 hover:text-blue-500">Accreditations</a></li>
-                    <li><a href="#farerate" className="block px-6 py-2 hover:text-blue-500">Get a Fare Rate</a></li>
                     <li><a href="#about" className="block px-6 py-2 hover:text-blue-500">About</a></li>
-                    <li><a href="#gallery" className="block px-6 py-2 hover:text-blue-500">Gallery</a></li>
-                    <li><a href="#career" className="block px-6 py-2 hover:text-blue-500">Career</a></li>
                     <li><a href="#contact" className="block px-6 py-2 hover:text-blue-500">Contact us</a></li>
                 </ul>
             </div>
