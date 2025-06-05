@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router';
+
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -14,7 +15,6 @@ export default function Navbar() {
                     <span style={{ color: '#FF0004' }}>GLOBAL</span>
                 </h1>
 
-                {/* Hamburger Button */}
                 <button
                     className="md:hidden text-2xl text-gray-700 focus:outline-none"
                     onClick={toggleMenu}
@@ -22,14 +22,32 @@ export default function Navbar() {
                     {isOpen ? <FaTimes /> : <FaBars />}
                 </button>
 
-                {/* Navigation Links */}
                 <ul
                     className={`md:flex flex-col md:flex-row md:static absolute top-16 left-0 w-full bg-white md:bg-transparent md:w-auto gap-6 text-gray-700 font-medium transition-all duration-300 ease-in-out ${
                         isOpen ? 'flex' : 'hidden'
                     }`}
                 >
-                    <li><Link to="/" className="block px-6 py-2 hover:text-blue-500">Home</Link></li>
-                    <li><Link to="/services" className="block px-6 py-2 hover:text-blue-500">Services</Link></li>
+                    <li>
+                        <Link to="/" className="block px-6 py-2 hover:text-blue-500">Home</Link>
+                    </li>
+
+                    <li className="relative group">
+                        <span className="block px-6 py-2 cursor-pointer hover:text-blue-500">
+                            Services
+                        </span>
+                        <ul className="absolute left-0 top-full hidden group-hover:block bg-white shadow-md rounded-md w-48 z-50">
+                            <li>
+                                <Link to="/international" className="block px-4 py-2 hover:bg-gray-100">International</Link>
+                            </li>
+                            <li>
+                                <Link to="/domestic" className="block px-4 py-2 hover:bg-gray-100">Domestic</Link>
+                            </li>
+                            <li>
+                                <Link to="/allied" className="block px-4 py-2 hover:bg-gray-100">Allied</Link>
+                            </li>
+                        </ul>
+                    </li>
+
                     <li><Link to="/about" className="block px-6 py-2 hover:text-blue-500">About</Link></li>
                     <li><Link to="/testimonials" className="block px-6 py-2 hover:text-blue-500">Testimonials</Link></li>
                     <li><Link to="/contact" className="block px-6 py-2 hover:text-blue-500">Contact us</Link></li>

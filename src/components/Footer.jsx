@@ -24,8 +24,8 @@ export default function Footer() {
                 <div>
                     <h2 className="text-lg font-bold mb-3">Services</h2>
                     <ul className="space-y-2">
-                        {Array(6).fill('Sea Freight').map((item, idx) => (
-                            <li key={idx} className="hover:text-blue-400 cursor-pointer">{item}</li>
+                        {['International', 'Domestic', 'Allied'].map((service, idx) => (
+                        <li key={idx} className="hover:text-blue-400 cursor-pointer">{service}</li>
                         ))}
                     </ul>
                 </div>
