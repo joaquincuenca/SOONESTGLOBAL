@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function AboutUs() {
     return (
-        <div className="min-h-screen bg-gray-50 py-12 px-6 md:px-16 mt-10">
+        <div className="min-h-screen bg-gray-50 py-12 px-6 md:px-16 mt-14">
         <div className="mx-auto text-center max-w-7xl">
             {/* Main Image */}
             <img

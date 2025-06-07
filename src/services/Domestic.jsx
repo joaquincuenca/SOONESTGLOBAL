@@ -43,7 +43,7 @@ import {
 
     export default function Domestic() {
     return (
-        <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 mt-10">
+        <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8 mt-12">
         <div className="max-w-screen-xl mx-auto">
             <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-green-700">
