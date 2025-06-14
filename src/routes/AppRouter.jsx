@@ -5,7 +5,7 @@ import MainLayout from '../layout/MainLayout';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Services from '../pages/Services';
-import Testimonials from '../pages/Testimonials';
+import Farerate from '../pages/Fare-rate';
 import Contact from '../pages/Contact';
 
 import International from '../services/International';
@@ -21,7 +21,7 @@ export default function AppRouter() {
                 <Route index element={<Home />} />
                 <Route path='/services' element={<Services />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/testimonials" element={<Testimonials />} />
+                <Route path="/Fare-rate" element={<Farerate />} />
                 <Route path="/contact" element={<Contact />} />
 
                 {/* services */}
